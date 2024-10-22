@@ -13,7 +13,7 @@ const Header = () => {
           <img
             src="ethan.webp"
             alt="me"
-            className="rounded-md transition-transform duration-300 hover:shadow-lg hover:shadow-emerald-800 hover:scale-105 " // Añade ambos efectos aquí
+            className="rounded-md transition-transform duration-300 hover:shadow-lg hover:shadow-emerald-800 hover:scale-105"
           />
         </motion.h1>
 
