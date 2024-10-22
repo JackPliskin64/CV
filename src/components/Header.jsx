@@ -16,7 +16,6 @@ const Header = () => {
             className="rounded-md transition-transform duration-300 hover:shadow-lg hover:shadow-emerald-800 hover:scale-105"
           />
         </motion.h1>
-
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,11 +30,12 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl lg:text-2xl text-white mb-10 text-center"
         >
-          made by Ethan Carranza Serrano
+          by Ethan Carranza Serrano
         </motion.p>
         <div className="flex justify-center gap-4">
           <CustomButton text="Experience" link="features" />
           <CustomButton text="Projects" link="projects" />
+          <CustomButton text="Skills" link="skills" />
         </div>
       </div>
     </div>
