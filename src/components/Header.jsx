@@ -23,7 +23,7 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 mt-24 text-center"
         >
-          Welcome to my CV
+          Welcome to my CV!
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: -20 }}
@@ -31,10 +31,11 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl lg:text-2xl text-white mb-10 text-center"
         >
-          Follow the white rabbit...
+          made by Ethan Carranza Serrano
         </motion.p>
-        <div className="flex justify-center">
-          <CustomButton text="Take the pill" link="features" />
+        <div className="flex justify-center gap-4">
+          <CustomButton text="Experience" link="features" />
+          <CustomButton text="Projects" link="projects" />
         </div>
       </div>
     </div>

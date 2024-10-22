@@ -1,26 +1,25 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import CustomButton from './CustomButton';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: 'Project 1',
-      quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam felis velit, a placerat ligula lacinia et.',
+      name: 'Khajiit Has Wares',
+      img: 'khajiitHasWares.webp',
+      link: 'https://khajiithaswares.netlify.app',
     },
     {
       id: 2,
-      name: 'Project 2',
-      quote:
-        'Vestibulum nec metus quis justo vestibulum vestibulum. Morbi varius nunc sit amet dui faucibus, ut laoreet elit semper.',
+      name: 'The Elder Scrolls FanGame',
+      img: 'esoFanGame.webp',
+      link: 'https://tes-roleplay-game.netlify.app',
     },
     {
       id: 3,
-      name: 'Project 3',
-      quote:
-        'Aenean sagittis ligula ac velit pellentesque, at pretium elit tincidunt. Nunc eleifend arcu at sapien ullamcorper iaculis.',
+      name: 'Roskland 2D',
+      img: 'roskland2D.webp',
+      link: 'https://play.unity.com/en/games/a89c24fe-fd80-4b89-8978-38abcd450063/roskland-2d',
     },
   ];
 
@@ -57,18 +56,23 @@ const Projects = () => {
           {projects.map((projects) => (
             <motion.div
               key={projects.id}
-              className="bg-white bg-opacity-10 p-8 rounded-lg shadow-lg"
+              className="bg-white bg-opacity-10 rounded-lg shadow-lg"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={controls}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-gray-300 mb-4">{projects.quote}</p>
-              <p className="text-white font-bold">{projects.name}</p>
+              <a href={projects.link} target="_blank" rel="noreferrer">
+                <img
+                  src={projects.img}
+                  alt={projects.name}
+                  className="w-full h-56 object-cover rounded-md transition-transform duration-300 hover:shadow-lg hover:shadow-emerald-800 hover:scale-105"
+                />
+              </a>
+              <p className="text-white text-center my-4 font-bold">
+                {projects.name}
+              </p>
             </motion.div>
           ))}
-        </div>
-        <div className="flex justify-center mt-10">
-          <CustomButton text="Pricing" link="pricing" />
         </div>
       </div>
     </section>

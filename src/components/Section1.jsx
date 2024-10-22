@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Experience from './Experience';
-import CustomButton from './CustomButton';
 
 const Features = () => {
   const [ref, inView] = useInView({
@@ -9,11 +8,7 @@ const Features = () => {
   });
 
   return (
-    <section
-      className="bg-transparent px-10 py-10 mb-[340px]"
-      id="features"
-      ref={ref}
-    >
+    <section className="bg-transparent px-10 pt-10]" id="features" ref={ref}>
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-10">
           EXPERIENCE
@@ -26,10 +21,6 @@ const Features = () => {
         >
           <Experience></Experience>
         </motion.div>
-
-        <div className="flex justify-center mt-10">
-          <CustomButton text="Projects" link="projects" />
-        </div>
       </div>
     </section>
   );
