@@ -42,6 +42,36 @@ const Projects = () => {
       img: 'javascript.svg',
       link: 'https://en.wikipedia.org/wiki/JavaScript',
     },
+    {
+      id: 4,
+      name: 'NodeJS',
+      img: 'nodeIcon.svg',
+      link: 'https://nodejs.org/en/',
+    },
+    {
+      id: 5,
+      name: 'ReactJS',
+      img: 'reactIcon.svg',
+      link: 'https://es.react.dev',
+    },
+    {
+      id: 6,
+      name: 'MongoDB',
+      img: 'mongoIcon.svg',
+      link: 'https://www.mongodb.com/es',
+    },
+    {
+      id: 7,
+      name: 'Tailwind CSS',
+      img: 'tailwindIcon.webp',
+      link: 'https://tailwindcss.com',
+    },
+    {
+      id: 8,
+      name: 'TypeScript',
+      img: 'typescriptIcon.webp',
+      link: 'https://www.typescriptlang.org',
+    },
   ];
 
   const controls = useAnimation();
@@ -74,7 +104,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-10">
             PROJECTS
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {projects.map((projects) => (
               <motion.div
                 key={projects.id}
